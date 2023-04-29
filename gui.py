@@ -13,6 +13,8 @@ from main import set_tesseract_path, select_region_and_capture, ocr_image
 # TODO: tab2: imported image and ocr image with scroll bar
 # TODO: tab3: text result box
 
+ctk.set_appearance_mode("dark")
+
 
 class Tab(ctk.CTkTabview):
     def __init__(self, parent, **kwargs) -> None:
