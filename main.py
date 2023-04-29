@@ -15,6 +15,8 @@ import pyperclip
 # Set the logging level
 logging.basicConfig(level=logging.INFO)
 
+OCR_IMAGE_DIR = r"./ocr_images"
+
 """OCR on images of Japanese text."""
 """Does not work on Mac OS"""
 
@@ -109,6 +111,8 @@ def ocr_image(
             image = preprocess_image(image)
         
         # Save the preprocessed image
+        if not os.path.exists(OCR_IMAGE_DIR):
+            os.makedirs(OCR_IMAGE_DIR)
         image.save("./ocr_images/preprocessed.png")
         
         # Display the preprocessed image
