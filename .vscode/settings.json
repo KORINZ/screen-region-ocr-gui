@@ -7,4 +7,5 @@
         "editor.defaultFormatter": "ms-python.autopep8"
     },
     "python.formatting.provider": "none",
+    "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
 }
