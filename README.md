@@ -48,7 +48,7 @@ pip install -r requirements.txt
 1. Run the main script:
 
 ```
-python app.py
+python main.py
 ```
 
 2. Use the GUI to take a screenshot, import an image, and perform OCR on the selected region or imported image.
